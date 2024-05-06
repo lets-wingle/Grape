@@ -1,5 +1,6 @@
 import Observation
 
+@available(iOS 17.0, *)
 extension ForceDirectedGraphModel: Observation.Observable {
 
     @inlinable

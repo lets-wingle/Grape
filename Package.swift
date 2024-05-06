@@ -7,7 +7,7 @@ let package = Package(
     name: "Grape",
     platforms: [
         .macOS(.v14),
-        .iOS(.v17),
+        .iOS(.v16),
         .watchOS(.v10),
     ],
 

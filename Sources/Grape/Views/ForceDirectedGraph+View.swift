@@ -1,6 +1,7 @@
 import ForceSimulation
 import SwiftUI
 
+@available(iOS 17.0, *)
 extension ForceDirectedGraph: View {
     
     @inlinable
@@ -89,6 +90,7 @@ extension ForceDirectedGraph: View {
     }
 }
 
+@available(iOS 17.0, *)
 extension ForceDirectedGraph: Equatable {
     @inlinable
     public static func == (lhs: Self, rhs: Self) -> Bool

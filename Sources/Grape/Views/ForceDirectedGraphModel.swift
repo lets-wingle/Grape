@@ -4,6 +4,7 @@ import Observation
 import SwiftUI
 
 // @Observable
+@available(iOS 17.0, *)
 public final class ForceDirectedGraphModel<Content: GraphContent> {
 
     @usableFromInline
@@ -294,6 +295,7 @@ extension StrokeStyle {
 }
 
 // Render related
+@available(iOS 17.0, *)
 extension ForceDirectedGraphModel {
 
     @inlinable

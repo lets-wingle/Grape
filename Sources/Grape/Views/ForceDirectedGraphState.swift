@@ -16,6 +16,7 @@ import Observation
 //     }
 // }
 
+@available(iOS 17.0, *)
 public class ForceDirectedGraphState: Observation.Observable {
 
     @usableFromInline

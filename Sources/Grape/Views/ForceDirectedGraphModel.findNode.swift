@@ -2,6 +2,7 @@ import ForceSimulation
 import SwiftUI
 import simd
 
+@available(iOS 17.0, *)
 extension ForceDirectedGraphModel {
     @inlinable
     internal func findNode(

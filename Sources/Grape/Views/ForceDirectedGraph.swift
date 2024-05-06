@@ -1,6 +1,7 @@
 import ForceSimulation
 import SwiftUI
 
+@available(iOS 17.0, *)
 public struct ForceDirectedGraph<NodeID: Hashable, Content: GraphContent>
 where NodeID == Content.NodeID {
 

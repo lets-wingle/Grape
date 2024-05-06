@@ -2,6 +2,7 @@ import ForceSimulation
 import SwiftUI
 
 #if !os(tvOS)
+    @available(iOS 17.0, *)
     extension ForceDirectedGraph {
         @inlinable
         static var minimumAlphaAfterDrag: CGFloat { 0.5 }
@@ -79,6 +80,7 @@ import SwiftUI
         static var minimumDragDistance: CGFloat { 3.0 }
     }
 
+    @available(iOS 17.0, *)
     extension ForceDirectedGraph {
         @inlinable
         internal func onTapGesture(
@@ -92,6 +94,7 @@ import SwiftUI
 #endif
 
 #if os(iOS) || os(macOS)
+    @available(iOS 17.0, *)
     extension ForceDirectedGraph {
 
         @inlinable
@@ -180,6 +183,7 @@ import SwiftUI
     }
 #endif
 
+@available(iOS 17.0, *)
 extension ForceDirectedGraph {
     @inlinable
     public func onTicked(
