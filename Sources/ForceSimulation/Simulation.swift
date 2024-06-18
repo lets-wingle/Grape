@@ -90,7 +90,6 @@ where Vector: SimulatableVector & L2NormCalculatable, ForceField: ForceProtocol<
     /// Run a number of iterations of ticks.
     @inlinable
     public func tick(iterations: UInt = 1) {
-        // print(self.kinetics.alpha, self.kinetics.alphaMin)
         guard self.kinetics.alpha >= self.kinetics.alphaMin else { return }
         for _ in 0..<iterations {
             self.kinetics.updateAlpha()

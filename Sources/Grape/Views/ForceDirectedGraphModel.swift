@@ -302,7 +302,6 @@ extension ForceDirectedGraphModel {
     // @MainActor
     func start(minAlpha: Double = 0.6) {
         guard self.scheduledTimer == nil else { return }
-        print("Simulation started")
         if simulationContext.storage.kinetics.alpha < minAlpha {
             simulationContext.storage.kinetics.alpha = minAlpha
         }
@@ -327,7 +326,6 @@ extension ForceDirectedGraphModel {
     @inlinable
     // @MainActor
     func stop() {
-        print("Simulation stopped")
         self.scheduledTimer?.invalidate()
         self.scheduledTimer = nil
     }
@@ -339,11 +337,9 @@ extension ForceDirectedGraphModel {
         _ size: CGSize
     ) {
         // should not invoke `access`, but actually does now ?
-        // print("Rendering frame \(_$currentFrame.rawValue)")
         obsoleteState.cgSize = size
 
         let transform = modelTransform.translate(by: size.simd / 2)
-        // debugPrint(transform.scale)
 
         // var viewportPositions = [SIMD2<Double>]()
         // viewportPositions.reserveCapacity(simulationContext.storage.kinetics.position.count)
@@ -680,7 +676,6 @@ extension ForceDirectedGraphModel {
                 count: self.simulationContext.storage.kinetics.position.count
             )
         }
-        debugPrint("[REVIVED]")
     }
 
 }

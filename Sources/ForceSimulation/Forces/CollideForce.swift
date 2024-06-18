@@ -129,7 +129,6 @@ extension Kinetics {
                         if var jNode = t.nodeIndices {
                             while true {
                                 let j = jNode.index
-                                //                            print("\(i)<=>\(j)")
                                 // is leaf, make sure every collision happens once.
                                 if j > i {
 
